@@ -19,5 +19,4 @@ EXPOSE 8000
 
 # Run migration before starting the Django development server
 # Set the command to run Django's development server
-# Adjust this command if you're using a different production server (like Gunicorn)
 CMD ["bash", "-c"]

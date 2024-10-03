@@ -4,4 +4,4 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("", include("home.urls")),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL)

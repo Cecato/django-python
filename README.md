@@ -1,6 +1,8 @@
 ## Project Name
 
-# Django
-# Python
-# Docker
-#
+## Stack
+* Django
+* Python
+* Docker
+* docker
+* PostgreSQL

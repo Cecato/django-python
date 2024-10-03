@@ -1,27 +1,30 @@
-{# global html template #}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-    {%block title%}
-      title
-    {% endblock %}
-  </title>
+  <!-- Load static files -->
+  {% load static %}
+  
+  <title> {%block title%} title {% endblock %} </title>
 
-  {#<link rel="stylesheet" href="{% static 'css/styles.css' %}">#}
+  <!-- Link to reset CSS file -->
+  <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+
+  {% block extra_css %}{% endblock %}
 
 </head>
 <body>
   <header>
     <nav>
       <ul> 
+        <a>home</a>
       <ul>
     </nav>
   </header>
 
+  <!-- Block for dynamic content -->
   <main>
     {%block content%}
 
@@ -29,7 +32,6 @@
   </main>
 
   <footer>
-
   </footer>
 </body>
 </html>

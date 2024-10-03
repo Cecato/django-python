@@ -1,0 +1,46 @@
+/* Resetting all default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensuring the body takes up the full height */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Setting a default style for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Resetting list styles */
+ul {
+  list-style: none;
+}
+
+/* Basic styling for headers */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* A simple reset for images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Basic container styling */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}

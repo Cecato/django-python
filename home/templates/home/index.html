@@ -8,6 +8,11 @@
 {% endblock %}
 
 {% block content%}
-  <h1>{{mensagem}}</h1>
+  {% if stock_info %}
+    <p><strong>Symbol:</strong> {{ stock_info.symbol }}</p>
+    <p><strong>Close Price:</strong> {{ stock_info.close_price }}</p>
+  {% else %}
+    <p>No stock data available.</p>
+  {% endif %}
 {% endblock %}
 

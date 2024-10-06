@@ -17,6 +17,5 @@ COPY . .
 # Expose the port that Django will run on (default is 8000)
 EXPOSE 8000
 
-# Run migration before starting the Django development server
-# Set the command to run Django's development server
-CMD ["bash", "-c"]
+# Command to run migrations and start the Django development server
+CMD ["bash", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]

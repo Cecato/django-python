@@ -9,5 +9,7 @@ services:
     environment:
       SECRET_KEY: ${SECRET_KEY}
       DEBUG: ${DEBUG}
+      ALPHA_KEY: ${ALPHA_KEY}
     volumes:
       - .:/app
+      - ./static:/app/static

@@ -4,5 +4,4 @@
 * Django
 * Python
 * Docker
-* docker
 * PostgreSQL

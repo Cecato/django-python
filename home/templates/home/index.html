@@ -8,6 +8,11 @@
 {% endblock %}
 
 {% block content%}
+
+  {% if error_message %}
+    <p>Error: {{error_message}}</p>
+  {% endif %}
+
   {% if stock_info %}
     <p><strong>Symbol:</strong> {{ stock_info.symbol }}</p>
     <p><strong>Close Price:</strong> {{ stock_info.close_price }}</p>

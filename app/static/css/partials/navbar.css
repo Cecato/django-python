@@ -1,0 +1,49 @@
+.navcontainer{
+  width: 100%;
+  height: auto;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+
+  width: auto;
+  height: 2.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, var(--accent-color) 5px 10px 15px;
+
+  margin-top: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: var(--accent-color);
+
+} 
+
+.navbar li{
+  outline: 0 !important;
+  border: 0 !important;
+  padding: 0.5rem;
+
+  color: rgba(243, 242, 242, 0.918);
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.navbar li:hover{
+  transform: translateY(-3px);
+  
+}
+
+
+

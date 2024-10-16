@@ -1,12 +1,26 @@
+:root{
+  --primary-color: #98C1D9;      /* Cor Primária */
+  --secondary-color: #2e2e2e;    /* Cor Secundária */
+  --accent-color: #EE6C4D;        /* Cor de Acento */
+  --background-color: rgb(216, 205, 205);    /* Cor de Fundo */
+  --text-color: #131313;          /* Cor do Texto */
+  
+  --link-color: #2980b9;          /* Cor dos Links */
+  --border-color: rgba(253, 253, 253, 0.425);        /* Cor das Bordas */
+  --hover-color: #16a085;         /* Cor de Hover */
+  --error-color: #CB6040;         /* Cor de Erro */
+  --success-color: #27ae60;       /* Cor de Sucesso */
+}
+
 body {
-  background-color: #030303;
-  color: #ffffff;
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 h1 {
